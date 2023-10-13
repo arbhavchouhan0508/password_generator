@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <h1>password generator</h1>
+    <div>
+        <input type="text" readonly id="display">
+        <button onclick="copytoclip()">copy</button>
+    </div>
+    <div>
+        <input type="range" max="20" min="0" id="rangeInput">
+        <span id="displayLength"></span>
+    </div>
+    <div>
+        <div>
+            <input type="checkbox" id='uppercase'>
+            <label for='uppercase'>include uppercase</label>
+        </div>
+        <div>
+            <input type="checkbox" id='lowercase'>
+            <label for='lowercase'>include lowercase</label>
+        </div>
+        <div>
+            <input type="checkbox" id='includenumbers'>
+            <label for='includenumbers'>include numbers</label>
+        </div>
+        <div>
+            <input type="checkbox" id='includesymbols'>
+            <label for='includesymbols'>include symbols</label>
+        </div>
+    </div>
+    <button onclick="generatePassword()">generate password</button>
+    <script src="s.js"></script>
+</body>
+
+</html>
